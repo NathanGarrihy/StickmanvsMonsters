@@ -1,0 +1,23 @@
+fileFormatVersion: 2
+guid: 5ccba1effd9338342bb5f7bc2055c018
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Speed Phreak Extra-Condensed
+  fontNames:
+  - Speed Phreak Extra-Condensed
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: d49f8896d52eda74d8508e2d6bc61658, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
