@@ -1162,7 +1162,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 915705811}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.46, z: -10}
+  m_LocalPosition: {x: -2.83, y: -0.46, z: -10}
   m_LocalScale: {x: 0.5625, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1473,7 +1473,7 @@ PrefabInstance:
     - target: {fileID: 4876489771138149221, guid: a53f5d33c379a1342aba405f70750acf,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.3825
+      value: -0.2462
       objectReference: {fileID: 0}
     - target: {fileID: 4876489771138149221, guid: a53f5d33c379a1342aba405f70750acf,
         type: 3}
@@ -1646,7 +1646,7 @@ PrefabInstance:
     - target: {fileID: 3994648729088302046, guid: 48552a1913c6cfe49a7d9d8415faae63,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -13.38
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3994648729088302046, guid: 48552a1913c6cfe49a7d9d8415faae63,
         type: 3}
@@ -1698,6 +1698,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3994648729088302040, guid: 48552a1913c6cfe49a7d9d8415faae63,
+        type: 3}
+      propertyPath: m_SortingOrder
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3994648729088302043, guid: 48552a1913c6cfe49a7d9d8415faae63,
+        type: 3}
+      propertyPath: gunshot
+      value: 
+      objectReference: {fileID: 8300000, guid: 3c70f5a20b654f841ba223b5040cd7f7, type: 3}
     - target: {fileID: 3994648729088302036, guid: 48552a1913c6cfe49a7d9d8415faae63,
         type: 3}
       propertyPath: m_GravityScale
@@ -1774,16 +1784,6 @@ PrefabInstance:
       propertyPath: jumpForce
       value: 20
       objectReference: {fileID: 0}
-    - target: {fileID: 3994648729088302040, guid: 48552a1913c6cfe49a7d9d8415faae63,
-        type: 3}
-      propertyPath: m_SortingOrder
-      value: 8
-      objectReference: {fileID: 0}
-    - target: {fileID: 3994648729088302043, guid: 48552a1913c6cfe49a7d9d8415faae63,
-        type: 3}
-      propertyPath: gunshot
-      value: 
-      objectReference: {fileID: 8300000, guid: 3c70f5a20b654f841ba223b5040cd7f7, type: 3}
     - target: {fileID: 3994648728979212665, guid: 48552a1913c6cfe49a7d9d8415faae63,
         type: 3}
       propertyPath: m_LocalPosition.x
