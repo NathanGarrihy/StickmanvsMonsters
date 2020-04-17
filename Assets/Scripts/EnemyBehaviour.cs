@@ -9,7 +9,8 @@ public class EnemyBehaviour : MonoBehaviour
     private int storedScore;
     [SerializeField] private float speed = 6f;
     private int playerScore = GameController.playerScore;
-
+    // temp variable for speed calculations
+    private int tempPlayerScore;
     //  private methods 
     // Start is called before the first frame update
     private void Start()
@@ -19,6 +20,7 @@ public class EnemyBehaviour : MonoBehaviour
 
     void Update()
     {
+        tempPlayerScore = playerScore;
         //  do while because initial values are the same
         do
         {
@@ -30,164 +32,165 @@ public class EnemyBehaviour : MonoBehaviour
     //  Called in update whenever the score stored is != player score
     private void IncreaseSpeed()
     {
+        // playerScore read from game controller every time 
         speed = 10f;
         //  If statements to shorten else if's for speed increment
         //  Calculations to increase speed based on score
         //  10,000 -> 100,000
-        if (playerScore >= 10000 && playerScore < 20000)
+        if (tempPlayerScore >= 10000 && tempPlayerScore < 20000)
         {
             speed += 100f;
-            playerScore /= 10000;
+            tempPlayerScore /= 10000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 20000 && playerScore < 30000)
+        else if (tempPlayerScore >= 20000 && tempPlayerScore < 30000)
         {
             speed += 200f;
-            playerScore /= 20000;
+            tempPlayerScore /= 20000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 30000 && playerScore < 40000)
+        else if (tempPlayerScore >= 30000 && tempPlayerScore < 40000)
         {
             speed += 300f;
-            playerScore /= 30000;
+            tempPlayerScore /= 30000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 40000 && playerScore < 50000)
+        else if (tempPlayerScore >= 40000 && tempPlayerScore < 50000)
         {
             speed += 400f;
-            playerScore /= 40000;   // /= 10000, so it enters next if statement
+            tempPlayerScore /= 40000;   // /= 10000, so it enters next if statement
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 50000 && playerScore < 60000)
+        else if (tempPlayerScore >= 50000 && tempPlayerScore < 60000)
         {
             speed += 500f;
-            playerScore /= 50000;
+            tempPlayerScore /= 50000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 60000 && playerScore < 70000)
+        else if (tempPlayerScore >= 60000 && tempPlayerScore < 70000)
         {
             speed += 600f;
-            playerScore /= 60000;
+            tempPlayerScore /= 60000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 70000 && playerScore < 80000)
+        else if (tempPlayerScore >= 70000 && tempPlayerScore < 80000)
         {
             speed += 700f;
-            playerScore /= 70000;
+            tempPlayerScore /= 70000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 80000 && playerScore < 90000)
+        else if (tempPlayerScore >= 80000 && tempPlayerScore < 90000)
         {
             speed += 800f;
-            playerScore /= 80000;
+            tempPlayerScore /= 80000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 90000 && playerScore < 100000)
+        else if (tempPlayerScore >= 90000 && tempPlayerScore < 100000)
         {
             speed += 900f;
-            playerScore /= 90000;
+            tempPlayerScore /= 90000;
             //Debug.Log(playerScore);
         }
 
         //  Calculations to increase speed based on score
         //  Scores from 1,000 -> 10,000
-        if (playerScore >= 1000 && playerScore < 2000)
+        if (tempPlayerScore >= 1000 && tempPlayerScore < 2000)
         {
             speed += 10;
-            playerScore -= 1000; // -= 1000, so it enters next if statement
+            tempPlayerScore -= 1000; // -= 1000, so it enters next if statement
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 2000 && playerScore < 3000)
+        else if (tempPlayerScore >= 2000 && tempPlayerScore < 3000)
         {
             speed += 20f;
-            playerScore -= 2000;
+            tempPlayerScore -= 2000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 3000 && playerScore < 4000)
+        else if (tempPlayerScore >= 3000 && tempPlayerScore < 4000)
         {
             speed += 30f;
-            playerScore -= 3000;
+            tempPlayerScore -= 3000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 4000 && playerScore < 5000)
+        else if (tempPlayerScore >= 4000 && tempPlayerScore < 5000)
         {
             speed += 40f;
-            playerScore -= 4000;
+            tempPlayerScore -= 4000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 5000 && playerScore < 6000)
+        else if (tempPlayerScore >= 5000 && tempPlayerScore < 6000)
         {
             speed += 50f;
-            playerScore -= 5000;
+            tempPlayerScore -= 5000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 6000 && playerScore < 7000)
+        else if (tempPlayerScore >= 6000 && tempPlayerScore < 7000)
         {
             speed += 60f;
-            playerScore -= 6000;
+            tempPlayerScore -= 6000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 7000 && playerScore < 8000)
+        else if (tempPlayerScore >= 7000 && tempPlayerScore < 8000)
         {
             speed += 70f;
-            playerScore -= 7000;
+            tempPlayerScore -= 7000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 8000 && playerScore < 9000)
+        else if (tempPlayerScore >= 8000 && tempPlayerScore < 9000)
         {
             speed += 80f;
-            playerScore -= 8000;
+            tempPlayerScore -= 8000;
             //Debug.Log(playerScore);
         }
-        else if (playerScore >= 9000 && playerScore < 10000)
+        else if (tempPlayerScore >= 9000 && tempPlayerScore < 10000)
         {
             speed += 90f;
-            playerScore -= 9000;
+            tempPlayerScore -= 9000;
             //Debug.Log(playerScore);
         }
 
         //  Calculations to increase speed based on score
         //  Scores from 100 - 1,000 points
-        if (playerScore >= 0 && playerScore < 100)
+        if (tempPlayerScore >= 0 && tempPlayerScore < 100)
         {
             speed += 1f;
             //Debug.Log("score 0 +"+storedScore);
         }
-        else if (playerScore >= 100 && playerScore < 200)
+        else if (tempPlayerScore >= 100 && tempPlayerScore < 200)
         {
             speed += 2f;
             //Debug.Log("score 100 +"+storedScore);
         }
-        else if (playerScore >= 200 && playerScore < 300)
+        else if (tempPlayerScore >= 200 && tempPlayerScore < 300)
         {
             speed += 3f;
             //ebug.Log("score 200 +" +storedScore);
         }
-        else if (playerScore >= 300 && playerScore < 400)
+        else if (tempPlayerScore >= 300 && tempPlayerScore < 400)
         {
             speed += 4f;
         }
-        else if (playerScore >= 400 && playerScore < 500)
+        else if (tempPlayerScore >= 400 && tempPlayerScore < 500)
         {
             speed += 5f;
         }
-        else if (playerScore >= 500 && playerScore < 600)
+        else if (tempPlayerScore >= 500 && tempPlayerScore < 600)
         {
             speed += 6f;
         }
-        else if (playerScore >= 600 && playerScore < 700)
+        else if (tempPlayerScore >= 600 && tempPlayerScore < 700)
         {
             speed += 7f;
         }
-        else if (playerScore >= 700 && playerScore < 800)
+        else if (tempPlayerScore >= 700 && tempPlayerScore < 800)
         {
             speed += 8f;
         }
-        else if (playerScore >= 800 && playerScore < 900)
+        else if (tempPlayerScore >= 800 && tempPlayerScore < 900)
         {
             speed += 9f;
         }
-        else if (playerScore >= 900 && playerScore < 1000)
+        else if (tempPlayerScore >= 900 && tempPlayerScore < 1000)
         {
             speed += 10f;
         }

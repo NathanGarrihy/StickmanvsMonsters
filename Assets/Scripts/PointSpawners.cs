@@ -7,9 +7,9 @@ using Utilities;
 public class PointSpawners : MonoBehaviour
 {
     // == private fields ==
-    [SerializeField] private Enemy enemyPrefab;
-    [SerializeField] private Enemy enemyPrefab2;
-    [SerializeField] private ReflectEnemy enemyPrefab3;
+    [SerializeField] public Enemy enemyPrefab;
+    [SerializeField] public Enemy enemyPrefab2;
+    [SerializeField] public ReflectEnemy enemyPrefab3;
 
     [SerializeField] private float spawnDelay = 0.25f;
     [SerializeField] private float spawnInterval = 0.35f;

@@ -176,7 +176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c23a936aab4850446aea1469d91f2b3c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: -50
+  scoreValue: -40
   explosionEffect: {fileID: 2650521041731545017, guid: 853c287fb8e3b5e48ae4c317bddf3f89,
     type: 3}
   crashSound: {fileID: 8300000, guid: 5aa3b07b23ffdc24bad0253ff98c452b, type: 3}
