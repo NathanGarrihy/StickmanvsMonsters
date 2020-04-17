@@ -6,7 +6,7 @@ the city has been overrun by monsters and its up to you to wipe out as many as y
 ## How to run
 - Clone the files into an empty workplace
 - Open the Build folder
-- Click on StickmanVsMonsters.exe Application
+- Click on zzz.exe Application
 - Enjoy
 ### If this doesn't work
 - Open Unity version 2019.2.8lf1
